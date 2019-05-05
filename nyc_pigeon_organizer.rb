@@ -28,6 +28,7 @@ def nyc_pigeon_organizer(data)
           puts keys  
         else 
           pigeon_list[name] = {}
+          pigeon_list[color_gender_lives] = [key]
         end
       end
     end

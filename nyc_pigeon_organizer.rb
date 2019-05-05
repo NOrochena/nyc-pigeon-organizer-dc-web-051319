@@ -28,7 +28,7 @@ def nyc_pigeon_organizer(data)
           
         else 
           pigeon_list[name] = {}
-          pigeon_list[color_gender_lives] = [key]
+          pigeon_list[color_gender_lives] = [keys]
         end
       end
     end

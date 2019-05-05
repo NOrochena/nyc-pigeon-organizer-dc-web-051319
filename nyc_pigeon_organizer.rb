@@ -18,5 +18,9 @@ pigeon_data = {
 }
 
 def nyc_pigeon_organizer(data)
-  # write your code here!
+  
+  data.each do |color_gender_lives, attributes|
+    
 end
+
+nyc_pigeon_organizer(pigeon_data)

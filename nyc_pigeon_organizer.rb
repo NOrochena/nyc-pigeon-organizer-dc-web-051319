@@ -18,20 +18,8 @@ pigeon_data = {
 }
 
 def nyc_pigeon_organizer(data)
-  pigeon_list = {
-    "Theo" => {
-    :color => ["purple", "grey"],
-    :gender => ["male"],
-    :lives => ["Subway"]
-  },
-  "Peter Jr." => {
-    :color => ["purple", "grey"],
-    :gender => ["male"],
-    :lives => ["Library"]
-  },
-  }
+  pigeon_list = {}
   
-  puts pigeon_list.has_key?("Theo")
   data.each do |color_gender_lives, attributes|
     attributes.each do |keys, names|
       #puts keys

@@ -25,10 +25,14 @@ def nyc_pigeon_organizer(data)
       #keys = purple, grey, white, brown, male, female, subway...
       names.each do |name|
         if pigeon_list.has_key?(name)
-          
+          if pigeon_list.list[name].has_key?(color_gender_lives)
+            pigeon_list[name][color_gender_lives].push(keys.to_s)
+          else
+            pigeon_list[name][color_gender_lives] = [keys.to_s]
+          end
         else 
           pigeon_list[name] = {}
-          pigeon_list[name][color_gender_lives] = [keys]
+          pigeon_list[name][color_gender_lives] = [keys.to_s]
         end
       end
     end

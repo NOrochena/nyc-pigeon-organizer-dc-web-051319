@@ -22,7 +22,7 @@ def nyc_pigeon_organizer(data)
   
   data.each do |color_gender_lives, attributes|
     attributes.each do |keys, names|
-      #puts keys
+      puts names
     end
   end
     

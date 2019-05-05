@@ -34,7 +34,7 @@ def nyc_pigeon_organizer(data)
   puts pigeon_list.has_key?("Theo")
   data.each do |color_gender_lives, attributes|
     attributes.each do |keys, names|
-      puts keys
+      #puts keys
     end
   end
     

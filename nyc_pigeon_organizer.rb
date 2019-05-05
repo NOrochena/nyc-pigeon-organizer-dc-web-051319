@@ -22,7 +22,14 @@ def nyc_pigeon_organizer(data)
   
   data.each do |color_gender_lives, attributes|
     attributes.each do |keys, names|
-      puts names
+      #keys = purple, grey, white, brown, male, female, subway...
+      names.each do |name|
+        if pigeon_list.has_key?(name)
+          
+        else 
+          pigeon_list[name] = {}
+        end
+      end
     end
   end
     
